@@ -13,6 +13,7 @@ namespace Porag_R
     {
         private static List<Roll> rolls = new List<Roll>();
         private static List<Item> items = new List<Item>();
+        private static List<Arrangement> arrangements = new List<Arrangement>();
         private static int totalRollArea = 0;
         private static int totalItemArea = 0;
         static void Main(string[] args)
@@ -38,14 +39,25 @@ namespace Porag_R
                     }
                     else
                     {
-
+                        if (rolls[j].remainHeight > items[i].height * items[i].quantity)
+                        {
+                            Arrangement arrangement = new Arrangement();
+                            arrangement.itemNumber = items[i].number;
+                            arrangement.rollNumber = rolls[j].Number;
+                            rolls[j].remainHeight = rolls[j].remainHeight - (items[i].height * items[i].quantity);
+                            arrangements.Add(arrangement);
+                        }
                     }
                     
                 }
-                
             }
-            Console.WriteLine(totalRollArea);
-            Console.WriteLine(totalItemArea);
+
+            for (int i = 0; i < arrangements.Count; i++)
+            {
+                Console.WriteLine("Item Number: " + arrangements[i].itemNumber + " RollNumber: " + arrangements[i].rollNumber);
+            }
+            Console.WriteLine("Total roll area: " + totalRollArea);
+            Console.WriteLine("Total Item area:" + totalItemArea);
             Console.ReadKey();
         }
 
@@ -68,6 +80,8 @@ namespace Porag_R
                         Roll r = new Roll();
                         r.Number = rollNumber++;
                         r.height = Convert.ToInt32(cellValue2);
+                        r.remainHeight = Convert.ToInt32(cellValue2);
+                        r.width = Convert.ToInt32(cellValue);
                         r.width = Convert.ToInt32(cellValue);
                         totalRollArea += (r.height * r.width);
                         rolls.Add(r);

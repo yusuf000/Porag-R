@@ -7,3 +7,12 @@ C:\Yusuf\Porag R\Porag R\bin\Debug\EPPlus.xml
 C:\Yusuf\Porag R\Porag R\obj\Debug\Porag R.csprojResolveAssemblyReference.cache
 C:\Yusuf\Porag R\Porag R\obj\Debug\Porag R.exe
 C:\Yusuf\Porag R\Porag R\obj\Debug\Porag R.pdb
+C:\Yusuf\Porag-R\Porag R\Porag R\bin\Debug\Porag R.exe.config
+C:\Yusuf\Porag-R\Porag R\Porag R\obj\Debug\Porag R.exe
+C:\Yusuf\Porag-R\Porag R\Porag R\obj\Debug\Porag R.pdb
+C:\Yusuf\Porag-R\Porag R\Porag R\bin\Debug\SIze-Samples.xlsx
+C:\Yusuf\Porag-R\Porag R\Porag R\bin\Debug\Porag R.exe
+C:\Yusuf\Porag-R\Porag R\Porag R\bin\Debug\Porag R.pdb
+C:\Yusuf\Porag-R\Porag R\Porag R\bin\Debug\EPPlus.dll
+C:\Yusuf\Porag-R\Porag R\Porag R\bin\Debug\EPPlus.xml
+C:\Yusuf\Porag-R\Porag R\Porag R\obj\Debug\Porag R.csprojResolveAssemblyReference.cache
